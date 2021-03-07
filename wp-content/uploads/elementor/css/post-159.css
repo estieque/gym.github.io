@@ -71,7 +71,9 @@ body.rtl .elementor-159 .elementor-element.elementor-element-6850895{right:0px;}
 .elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-items.elementor-inline-items{margin-right:calc(-4px/2);margin-left:calc(-4px/2);}body.rtl
 .elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{left:calc(-4px/2);}body:not(.rtl)
 .elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{right:calc(-4px/2);}
-.elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-icon i{color:#F34E3A;font-size:16px;}
+.elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-icon i{
+	color:#F34E3A;
+	font-size:16px;}
 .elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-icon svg{fill:#F34E3A;width:16px;}
 .elementor-159 .elementor-element.elementor-element-b9fe05f .elementor-icon-list-text{padding-left:10px;}
 .elementor-159 .elementor-element.elementor-element-93aa11d > .elementor-container > .elementor-column >
