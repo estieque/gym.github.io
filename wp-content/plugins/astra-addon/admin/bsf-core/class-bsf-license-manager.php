@@ -379,7 +379,7 @@ if ( ! class_exists( 'BSF_License_Manager' ) ) {
 		 * @param int    $product_id Product ID.
 		 */
 		public function get_remote_license_status( $purchase_key, $product_id ) {
-                return '1';
+			return true;
 
 			$transient_key = $product_id . '_license_status';
 
@@ -557,8 +557,8 @@ if ( ! class_exists( 'BSF_License_Manager' ) ) {
 			// License not active message.
 			$form_heading_status = '';
 			if ( false === $is_active || 'false' === $is_active ) {
-				$license_status       = 'Active!';
-				$license_status_class = 'bsf-license-active-' . $product_id;
+				$license_status       = 'Not Active!';
+				$license_status_class = 'bsf-license-not-active-' . $product_id;
 				$not_activate         = '';
 				$html                .= apply_filters( "bsf_license_not_activate_message_{$product_id}", $not_activate, $license_status_class, $license_not_activate_message );
 
@@ -592,7 +592,7 @@ if ( ! class_exists( 'BSF_License_Manager' ) ) {
 				$html           .= apply_filters( "bsf_license_current_message_{$product_id}", $current_message );
 			}
 
-			if ( true != $is_active || 'true' != $is_active ) {
+			if ( true === $is_active || 'true' === $is_active ) {
 
 				$licnse_active_message = __( 'Your license is active.', 'bsf' );
 				$licnse_active_message = apply_filters( 'bsf_license_active_message', $licnse_active_message );
@@ -698,7 +698,7 @@ if ( ! class_exists( 'BSF_License_Manager' ) ) {
 
 			$product_id = $args['product_id'];
 
-			if ( isset( $product_id ) ) {
+			if ( ! isset( $product_id ) ) {
 				return $links;
 			}
 
